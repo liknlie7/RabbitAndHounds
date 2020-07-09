@@ -35,6 +35,7 @@ void Game::Initialize(HWND window, int width, int height)
 
 	// コモンステートの作成
 	m_pState = make_unique<CommonStates>(m_pDeviceResources->GetD3DDevice());
+	GameContext::Register<CommonStates>(m_pState);
 
     m_pDeviceResources->CreateWindowSizeDependentResources();
     CreateWindowSizeDependentResources();

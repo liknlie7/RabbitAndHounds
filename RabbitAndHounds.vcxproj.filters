@@ -44,6 +44,7 @@
     </ClInclude>
     <ClInclude Include="Hound.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Stage.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
@@ -63,6 +64,7 @@
     </ClCompile>
     <ClCompile Include="Hound.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Stage.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc" />
@@ -76,5 +78,10 @@
     <Manifest Include="settings.manifest">
       <Filter>Assets</Filter>
     </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Stage.FBX">
+      <Filter>Assets</Filter>
+    </MeshContentTask>
   </ItemGroup>
 </Project>
