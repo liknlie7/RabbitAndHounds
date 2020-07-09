@@ -1,6 +1,6 @@
 #pragma once
 #include "GameScene.h"
-
+#include "Stage.h"
 // プレイシーン
 class PlayScene : public GameScene
 {
@@ -22,5 +22,9 @@ public: // 関数
 	// 後処理
 	void Finalize() override;
 
+private: // 変数
+
+	// ステージ
+	std::unique_ptr<Stage>			m_pStage;
 };
 
