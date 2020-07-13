@@ -10,6 +10,7 @@
 #include "DeviceResources.h"
 #include "Projection.h"
 
+// ステージクラス
 class Stage : public GameObject
 {
 public: // 基本
