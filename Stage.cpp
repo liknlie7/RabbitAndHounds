@@ -15,6 +15,8 @@ Stage::Stage()
 	// ファイルを指定してモデルデータ読み込み
 	m_pModel = Model::CreateFromCMO(GameContext::Get<DX::DeviceResources>()->GetD3DDevice(), L"Resources/Models/Stage.cmo", *factory);
 	delete factory;
+
+	m_test = GeometricPrimitive::CreateSphere(GameContext::Get<DX::DeviceResources>()->GetD3DDeviceContext());
 }
 
 // デストラクタ
@@ -38,4 +40,6 @@ void Stage::Render(const Matrix & view)
 	// モデル描画
 	m_pModel->Draw(GameContext::Get<DX::DeviceResources>()->GetD3DDeviceContext(),
 		*GameContext::Get<CommonStates>(), m_matrix, view, GameContext::Get<Projection>()->GetMatrix());
+
+	//m_test->Draw(m_matrix, GameContext::Get<FixCamera>()->GetViewMatrix(),GameContext::Get<Projection>()->GetMatrix(), DirectX::Colors::Yellow);
 }

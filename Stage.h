@@ -10,6 +10,9 @@
 #include "DeviceResources.h"
 #include "Projection.h"
 
+#include <GeometricPrimitive.h>
+#include "FixCamera.h"
+
 // ステージクラス
 class Stage : public GameObject
 {
@@ -33,6 +36,9 @@ private: // 変数
 
 	// ステージ
 	std::unique_ptr<DirectX::Model>		m_pModel;
+
+
+	std::unique_ptr<DirectX::GeometricPrimitive> m_test;
 
 };
 

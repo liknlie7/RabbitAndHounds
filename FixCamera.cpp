@@ -5,9 +5,9 @@ using namespace DirectX;
 using namespace DirectX::SimpleMath;
 
 // 視点
-const Vector3 FixCamera::EYE_VEC = DirectX::SimpleMath::Vector3(0.0f, -100.0f, 0.0f);
+const Vector3 FixCamera::EYE_VEC = DirectX::SimpleMath::Vector3(-20.0f, 37.0f, 0.0f);
 // カメラの向き					   
-const Vector3 FixCamera::UP_VEC = DirectX::SimpleMath::Vector3(0.0f, 0.0f, -1.0f);
+const Vector3 FixCamera::UP_VEC = DirectX::SimpleMath::Vector3(1.0f, 0.0f, 0.0f);
 
 // コンストラクタ
 FixCamera::FixCamera()
