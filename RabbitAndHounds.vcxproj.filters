@@ -11,6 +11,9 @@
     <Filter Include="Scene">
       <UniqueIdentifier>{5148489c-44e5-49c6-80af-0bd5951d458e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{0b54b574-5dce-4837-b79e-9fab721e67ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -42,12 +45,20 @@
     <ClInclude Include="GameContext.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="Hound.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="Stage.h" />
-    <ClInclude Include="FixCamera.h" />
     <ClInclude Include="Utilities.h">
       <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="FixCamera.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Hound.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Objects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -66,10 +77,18 @@
     <ClCompile Include="GameSceneManager.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Hound.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="Stage.cpp" />
-    <ClCompile Include="FixCamera.cpp" />
+    <ClCompile Include="FixCamera.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Hound.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc" />
@@ -86,6 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <MeshContentTask Include="Stage.FBX">
+      <Filter>Assets</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Hound.FBX">
       <Filter>Assets</Filter>
     </MeshContentTask>
   </ItemGroup>

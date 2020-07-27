@@ -204,6 +204,9 @@
     <Manifest Include="settings.manifest" />
   </ItemGroup>
   <ItemGroup>
+    <MeshContentTask Include="Hound.FBX">
+      <ContentOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Resources\Models\%(Filename).cmo</ContentOutput>
+    </MeshContentTask>
     <MeshContentTask Include="Stage.FBX">
       <ContentOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Resources\Models\%(Filename).cmo</ContentOutput>
     </MeshContentTask>
